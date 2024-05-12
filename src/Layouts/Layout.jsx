@@ -1,11 +1,14 @@
 import { Outlet } from "react-router-dom";
-import Navigation from "../Shared/Navigation/Navigation";
+import Sound from "../Components/Sound";
+import FireFliesBackground from "../Components/FireFliesBackground";
 
 const Layout = () => {
   return (
     <>
-      <Navigation />
       <Outlet />
+      <FireFliesBackground />
+      <Sound />
+      <div id="my-modal" />
     </>
   );
 };

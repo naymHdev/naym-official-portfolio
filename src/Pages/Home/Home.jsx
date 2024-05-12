@@ -1,7 +1,7 @@
-import bg from '../../../Public/background/home-background.png'
-import Wizard from '../../Components/Models/Wizard';
-import Navigation from '../../Shared/Navigation/Navigation';
-import RenderModel from '../Projects/RenderModel';
+import bg from "../../../Public/background/home-background.png";
+import Wizard from "../../Components/Models/Wizard";
+import Navigation from "../../Shared/Navigation/Navigation";
+import RenderModel from "../Projects/RenderModel";
 
 const Home = () => {
   return (

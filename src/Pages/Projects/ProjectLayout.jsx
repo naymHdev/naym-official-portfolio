@@ -21,7 +21,7 @@ const ProjectLayout = ({
       variants={item}
       href={demoLink}
       target={"_blank"}
-      className=" text-sm md:text-base w-full relative rounded-lg overflow-hidden p-4 md:p-6 custom-bg"
+      className="mt-20 text-sm md:text-base w-full relative rounded-lg overflow-hidden p-4 md:p-6 custom-bg"
     >
       <div className="">
         <h1 className="text-foreground text-xl font-semibold">{name}</h1>

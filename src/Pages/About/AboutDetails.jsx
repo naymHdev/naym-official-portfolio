@@ -3,7 +3,7 @@ import ItemLayout from "./ItemLayout";
 
 const AboutDetails = () => {
   return (
-    <section className="py-20 w-full">
+    <section className="py-5 w-11/12 mx-auto">
       <div className="grid grid-cols-12 gap-4 xs:gap-6  md:gap-8 w-full">
         <ItemLayout className="col-span-full lg:col-span-8 row-span-2 flex-col items-start">
           <h2 className="text-[#E1E1E1] font-medium text-xl md:text-2xl text-left w-full capitalize">

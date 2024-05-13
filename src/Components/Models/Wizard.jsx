@@ -1,17 +1,28 @@
 /* eslint-disable react/no-unknown-property */
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "react-three-fiber";
 
 const Wizard = React.memo(function Wizard(props) {
-  const { nodes, materials } = useGLTF("/Public/models/wizard-transformed.glb");
+  const [error, setError] = useState(null);
+  const { nodes, materials } = useGLTF(
+    "/Public/models/wizard-transformed.glb",
+    undefined,
+    setError
+  );
 
   const modelRef = useRef();
 
   useFrame((state) => {
-    modelRef.current.position.y =
-      -1.5 + Math.sin(state.clock.elapsedTime) * 0.15;
+    if (modelRef.current) {
+      modelRef.current.position.y =
+        -1.5 + Math.sin(state.clock.elapsedTime) * 0.15;
+    }
   });
+
+  if (error) {
+    return <div>Error loading model: {error.message}</div>;
+  }
 
   return (
     <group

@@ -14,7 +14,7 @@ const Home = () => {
           className="-z-50 w-full h-full object-cover object-center"
         />
 
-        <div className="w-full h-screen">
+        <div className="w-full h-screen absolute">
           <Navigation />
           <RenderModel>
             <Wizard />

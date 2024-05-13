@@ -3,10 +3,12 @@ import { projectsData } from "../../Components/Api/Data";
 import Design from "../../Components/Models/Design";
 import ProjectList from "./ProjectList";
 import RenderModel from "./RenderModel";
+import HomeBtn from "../../Components/HomeBtn";
 
 export default function Projects() {
   return (
     <>
+    <HomeBtn />
       <img
         src={bg}
         alt="Next.js Portfolio website's about page background image"

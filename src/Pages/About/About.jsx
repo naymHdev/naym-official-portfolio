@@ -2,10 +2,12 @@ import bg from "../../../Public/background/about-background.png";
 import HatModel from "../../Components/Models/HatModel";
 import RenderModel from "../Projects/RenderModel";
 import AboutDetails from "./AboutDetails";
+import HomeBtn from "../../Components/HomeBtn";
 
 export default function About() {
   return (
     <>
+      <HomeBtn />
       <img
         src={bg}
         sizes="100vw"

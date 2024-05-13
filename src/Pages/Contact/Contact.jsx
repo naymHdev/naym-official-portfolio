@@ -1,9 +1,11 @@
 import bg from "../../../Public/background/contact-background.png";
 import Form from "./Form";
+import HomeBtn from "../../Components/HomeBtn";
 
 export default function Contact() {
   return (
     <>
+      <HomeBtn />
       <img
         src={bg}
         alt="Next.js Portfolio website's contact page background image"

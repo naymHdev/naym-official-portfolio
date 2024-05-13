@@ -4,7 +4,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "react-three-fiber";
 
 const Wizard = React.memo(function Wizard(props) {
-  const { nodes, materials } = useGLTF("../../../Public/models/wizard-transformed.glb");
+  const { nodes, materials } = useGLTF("/Public/models/wizard-transformed.glb");
 
   const modelRef = useRef();
 

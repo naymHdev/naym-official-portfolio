@@ -4,11 +4,15 @@ import Design from "../../Components/Models/Design";
 import ProjectList from "./ProjectList";
 import RenderModel from "./RenderModel";
 import HomeBtn from "../../Components/HomeBtn";
+import { Helmet } from "react-helmet";
 
 export default function Projects() {
   return (
     <>
-    <HomeBtn />
+      <Helmet>
+        <title>Naym Hossen || Projects</title>
+      </Helmet>
+      <HomeBtn />
       <img
         src={bg}
         alt="Next.js Portfolio website's about page background image"

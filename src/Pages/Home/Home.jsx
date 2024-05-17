@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import bg from "../../../Public/background/home-background.png";
 import Wizard from "../../Components/Models/Wizard";
 import Navigation from "../../Shared/Navigation/Navigation";
@@ -6,6 +7,9 @@ import RenderModel from "../Projects/RenderModel";
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>Naym Hossen || Home</title>
+      </Helmet>
       <main className="flex min-h-screen flex-col items-center justify-between relative">
         <div className=" bg-black w-full h-full min-h-screen -z-10 opacity-20" />
         <img

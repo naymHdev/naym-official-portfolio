@@ -1,10 +1,14 @@
 import bg from "../../../Public/background/contact-background.png";
 import Form from "./Form";
 import HomeBtn from "../../Components/HomeBtn";
+import { Helmet } from "react-helmet";
 
 export default function Contact() {
   return (
     <>
+    <Helmet>
+        <title>Naym Hossen || Contact us</title>
+      </Helmet>
       <HomeBtn />
       <img
         src={bg}

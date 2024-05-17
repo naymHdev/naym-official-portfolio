@@ -37,7 +37,7 @@ const ProjectList = ({ projects }) => {
       {currentProperties?.map((project, index) => {
         return <ProjectLayout key={index} {...project} />;
       })}
-      <div className=" mt-8 flex justify-end items-end">
+      <div className=" mt-8 flex justify-end items-end pb-5">
         <Pagination
           current={currentPage}
           pageSize={itemsPerPage}

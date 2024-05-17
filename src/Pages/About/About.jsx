@@ -3,10 +3,14 @@ import HatModel from "../../Components/Models/HatModel";
 import RenderModel from "../Projects/RenderModel";
 import AboutDetails from "./AboutDetails";
 import HomeBtn from "../../Components/HomeBtn";
+import { Helmet } from "react-helmet";
 
 export default function About() {
   return (
     <>
+      <Helmet>
+        <title>Naym Hossen || About</title>
+      </Helmet>
       <HomeBtn />
       <img
         src={bg}

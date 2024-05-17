@@ -1,12 +1,12 @@
 /* eslint-disable react/no-unknown-property */
 import React, { useRef, useState } from "react";
 import { useGLTF } from "@react-three/drei";
-import { useFrame } from "react-three-fiber";
+import { useFrame } from "@react-three/fiber";
 
 const Wizard = React.memo(function Wizard(props) {
   const [error, setError] = useState(null);
   const { nodes, materials } = useGLTF(
-    "/Public/models/wizard-transformed.glb",
+    "/models/wizard-transformed.glb",
     undefined,
     setError
   );

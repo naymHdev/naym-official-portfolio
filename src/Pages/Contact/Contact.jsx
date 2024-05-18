@@ -1,22 +1,35 @@
-import bg from "../../../Public/background/contact-background.png";
+import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import Form from "./Form";
 import HomeBtn from "../../Components/HomeBtn";
-import { Helmet } from "react-helmet";
 
 export default function Contact() {
+  const [bgUrl, setBgUrl] = useState("");
+
+  useEffect(() => {
+    // Dynamically import the background image
+    import("../../../Public/background/contact-background.png").then(
+      (image) => {
+        setBgUrl(image.default);
+      }
+    );
+  }, []);
+
   return (
     <>
-    <Helmet>
-        <title>Naym Hossen || Contact us</title>
+      <Helmet>
+        <title>Naym Hossen || Contact Us</title>
       </Helmet>
       <HomeBtn />
-      <img
-        src={bg}
-        alt="Next.js Portfolio website's contact page background image"
-        sizes="100vw"
-        className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center"
-      />
-
+      {bgUrl && (
+        <img
+          src={bgUrl}
+          alt="Next.js Portfolio website's contact page background image"
+          sizes="100vw"
+          className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center"
+          loading="lazy"
+        />
+      )}
       <article className="relative md:w-full w-11/12 mx-auto min-h-screen flex flex-col items-center justify-center py-8 sm:py-0 space-y-8">
         <div className="flex flex-col items-center justify-center space-y-6 w-full sm:w-3/4">
           <h1 className="text-accent font-semibold text-center text-4xl capitalize">

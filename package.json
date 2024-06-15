@@ -1,14 +1,16 @@
 {
   "name": "naym-official-portfolio",
   "private": true,
-  "homepage": "https://naymHdev.github.io/<repository-name>",
+  "homepage": "https://naymHdev.github.io/naym-official-portfolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",

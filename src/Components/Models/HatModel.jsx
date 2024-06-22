@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 const HatModel = React.memo(function HatModel(props) {
-  const { nodes, materials } = useGLTF("/Public/models/hat-transformed.glb");
+  const { nodes, materials } = useGLTF("/models/hat-transformed.glb");
 
   const modelRef = useRef();
 
@@ -33,4 +33,4 @@ const HatModel = React.memo(function HatModel(props) {
 });
 
 export default HatModel;
-useGLTF.preload("/Public/models/hat-transformed.glb");
+useGLTF.preload("/models/hat-transformed.glb");

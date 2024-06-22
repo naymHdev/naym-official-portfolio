@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 const Design = React.memo(function Staff(props) {
-  const { nodes, materials } = useGLTF("/models/staff-transformed.glb");
+  const { nodes, materials } = useGLTF("/Public/models/staff-transformed.glb");
   const modelRef = useRef();
 
   useFrame(() => {
@@ -75,4 +75,4 @@ const Design = React.memo(function Staff(props) {
 
 export default Design;
 
-useGLTF.preload("/models/staff-transformed.glb");
+useGLTF.preload("/Public/models/staff-transformed.glb");

@@ -6,7 +6,7 @@ import { useFrame } from "@react-three/fiber";
 const Wizard = React.memo(function Wizard(props) {
   const [error, setError] = useState(null);
   const { nodes, materials } = useGLTF(
-    "/models/wizard-transformed.glb",
+    "/Public/models/wizard-transformed.glb",
     undefined,
     setError
   );
@@ -136,4 +136,4 @@ const Wizard = React.memo(function Wizard(props) {
 });
 
 export default Wizard;
-useGLTF.preload("/models/wizard-transformed.glb");
+useGLTF.preload("/Public/models/wizard-transformed.glb");

@@ -107,6 +107,7 @@ const Wizard = React.memo(function Wizard(props) {
   );
 
   if (error) {
+    console.error('Error loading model:', error);
     return <div>Error loading model: {error.message}</div>;
   }
 
